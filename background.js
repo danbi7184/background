@@ -2,15 +2,11 @@ Module.register("background", {
     defaults: {
     },
 
-    getStyles: function() {
-    },
-    
-    start: function() {
-    },
-
     getDom: function() {
-        var wrapper = document.createElement("img");
-        wrapper.src = "modules/background/photos/photo1.jpg";
+        var wrapper = document.createElement("div");
+        var img = document.createElement("img");
+        img.src = "modules/background/photo1.jpg";
+        wrapper.appendChild(img);
         return wrapper;
     },
 })
