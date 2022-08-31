@@ -10,6 +10,7 @@ Module.register("background", {
         var wrapper = document.createElement("div");
         var img = document.createElement("img");
         img.src = "modules/background/photo1.jpg";
+        img.id = "image";
         wrapper.appendChild(img);
         return wrapper;
     },
